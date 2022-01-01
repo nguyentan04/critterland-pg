@@ -1,2 +1,2 @@
-# critterland-pg
-page
+# critterland-page
+Page of critterland
