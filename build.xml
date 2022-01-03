@@ -298,6 +298,7 @@
                 <file name="src/homeScene.js"/>
                 <file name="src/firstScene.js"/>
                 <file name="src/getCardsScene.js"/>
+                <file name="src/getCardsActionScene.js"/>
                 <file name="main.js"/>
 
             </sources>
