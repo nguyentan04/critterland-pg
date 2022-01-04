@@ -295,10 +295,13 @@
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
+                <file name="src/MainScene.js"/>
                 <file name="src/homeScene.js"/>
                 <file name="src/firstScene.js"/>
                 <file name="src/getCardsScene.js"/>
                 <file name="src/getCardsActionScene.js"/>
+                <file name="src/campaignScene.js"/>
+                <file name="src/multiplayersScene.js"/>
                 <file name="main.js"/>
 
             </sources>
