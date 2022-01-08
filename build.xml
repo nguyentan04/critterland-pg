@@ -303,6 +303,11 @@
                 <file name="src/getCardsActionScene.js"/>
                 <file name="src/campaignScene.js"/>
                 <file name="src/multiplayersScene.js"/>
+                <file name="src/cardHubScene.js"/>
+                <file name="src/libraryScene.js"/>
+                <file name="src/pillageScene.js"/>
+                <file name="src/profileScene.js"/>
+                <file name="src/shopScene.js"/>
                 <file name="main.js"/>
 
             </sources>
