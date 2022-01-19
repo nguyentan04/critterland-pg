@@ -12,8 +12,8 @@ let provider;
   
   
  // Address of the selected account
-let selectedAccount;
-let balanceBnb;
+let selectedAccount = "";
+let balanceBnb = "";
 const env = {
     BSCSCAN: "https://testnet.bscscan.com/address/",
     TOKEN: ""
@@ -24,8 +24,8 @@ const env = {
   */
 function init() { 
     console.log("Initializing example");
-    console.log("WalletConnectProvider is", WalletConnectProvider);
-    console.log("Fortmatic is", Fortmatic);
+    // console.log("WalletConnectProvider is", WalletConnectProvider);
+    // console.log("Fortmatic is", Fortmatic);
 
     // Tell Web3modal what providers we have available.
     // Built-in web browser provider (only one can exist as a time)
@@ -78,8 +78,12 @@ async function fetchAccountData() {
 
     //update data
     selectedAccount = selectedAccount.substring(0, 15)+"...";
-    _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet).setString(selectedAccount);
-    _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet_balance).setString(balanceBnb+" BNB");
+        try {
+            _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet).setString(selectedAccount);
+            _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet_balance).setString(balanceBnb+" BNB");
+        } catch(e) {
+            console.log("Error update", e);
+        }
     });
 
     // Because rendering account does its own RPC commucation
@@ -108,25 +112,27 @@ async function onConnect() {
 
     console.log("Opening a dialog", web3Modal);
     try {
-    provider = await web3Modal.connect();
+        if(selectedAccount == ""){
+            provider = await web3Modal.connect();
+        }
     } catch(e) {
-    console.log("Could not get a wallet connection", e);
+        console.log("Could not get a wallet connection", e);
     return;
     }
 
     // Subscribe to accounts change
     provider.on("accountsChanged", (accounts) => {
-    fetchAccountData();
+        fetchAccountData();
     });
 
     // Subscribe to chainId change
     provider.on("chainChanged", (chainId) => {
-    fetchAccountData();
+        fetchAccountData();
     });
 
     // Subscribe to networkId change
     provider.on("networkChanged", (networkId) => {
-    fetchAccountData();
+        fetchAccountData();
     });
 
     await refreshAccountData();
