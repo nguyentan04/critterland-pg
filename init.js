@@ -1,1 +1,165 @@
-var _0x8a56=["\x64\x65\x66\x61\x75\x6C\x74","\x57\x65\x62\x33\x4D\x6F\x64\x61\x6C","\x57\x61\x6C\x6C\x65\x74\x43\x6F\x6E\x6E\x65\x63\x74\x50\x72\x6F\x76\x69\x64\x65\x72","\x45\x76\x6D\x43\x68\x61\x69\x6E\x73","\x46\x6F\x72\x74\x6D\x61\x74\x69\x63","","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x65\x73\x74\x6E\x65\x74\x2E\x62\x73\x63\x73\x63\x61\x6E\x2E\x63\x6F\x6D\x2F\x61\x64\x64\x72\x65\x73\x73\x2F","\x49\x6E\x69\x74\x69\x61\x6C\x69\x7A\x69\x6E\x67\x20\x65\x78\x61\x6D\x70\x6C\x65","\x6C\x6F\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x73\x63\x2D\x64\x61\x74\x61\x73\x65\x65\x64\x31\x2E\x64\x65\x66\x69\x62\x69\x74\x2E\x69\x6F","\x57\x65\x62\x33\x20\x69\x6E\x73\x74\x61\x6E\x63\x65\x20\x69\x73","\x67\x65\x74\x41\x63\x63\x6F\x75\x6E\x74\x73","\x65\x74\x68","\x47\x6F\x74\x20\x61\x63\x63\x6F\x75\x6E\x74\x73","\x67\x65\x74\x42\x61\x6C\x61\x6E\x63\x65","\x65\x74\x68\x65\x72","\x66\x72\x6F\x6D\x57\x65\x69","\x75\x74\x69\x6C\x73","\x74\x6F\x46\x69\x78\x65\x64","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x2E\x2E\x2E","\x73\x65\x74\x53\x74\x72\x69\x6E\x67","\x70\x6F\x70\x75\x70\x5F\x77\x61\x6C\x6C\x65\x74","\x67\x65\x74\x43\x68\x69\x6C\x64\x42\x79\x54\x61\x67","\x70\x6F\x70\x75\x70\x5F\x64\x65\x66\x61\x75\x6C\x74","\x20\x42\x4E\x42","\x70\x6F\x70\x75\x70\x5F\x77\x61\x6C\x6C\x65\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65","\x45\x72\x72\x6F\x72\x20\x75\x70\x64\x61\x74\x65","\x6D\x61\x70","\x61\x6C\x6C","\x4F\x70\x65\x6E\x69\x6E\x67\x20\x61\x20\x64\x69\x61\x6C\x6F\x67","\x63\x6F\x6E\x6E\x65\x63\x74","\x43\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x67\x65\x74\x20\x61\x20\x77\x61\x6C\x6C\x65\x74\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x61\x63\x63\x6F\x75\x6E\x74\x73\x43\x68\x61\x6E\x67\x65\x64","\x6F\x6E","\x63\x68\x61\x69\x6E\x43\x68\x61\x6E\x67\x65\x64","\x6E\x65\x74\x77\x6F\x72\x6B\x43\x68\x61\x6E\x67\x65\x64","\x4B\x69\x6C\x6C\x69\x6E\x67\x20\x74\x68\x65\x20\x77\x61\x6C\x6C\x65\x74\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x63\x6C\x6F\x73\x65","\x63\x6C\x65\x61\x72\x43\x61\x63\x68\x65\x64\x50\x72\x6F\x76\x69\x64\x65\x72","\x77\x61\x6C\x6C\x65\x74\x5F\x61\x64\x64\x72\x65\x73\x73\x5F\x76\x61\x6C\x75\x65","\x63\x6F\x69\x6E\x5F\x69\x6E\x66\x6F\x5F\x76\x61\x6C\x75\x65"];const Web3Modal=window[_0x8a56[1]][_0x8a56[0]];const WalletConnectProvider=window[_0x8a56[2]][_0x8a56[0]];const EvmChains=window[_0x8a56[3]];const Fortmatic=window[_0x8a56[4]];let web3Modal;let provider;let selectedAccount=_0x8a56[5];let balanceBnb=_0x8a56[5];const env={BSCSCAN:_0x8a56[6],TOKEN:_0x8a56[5]};function init(){console[_0x8a56[8]](_0x8a56[7]);const _0x14e8xb={walletconnect:{package:window[_0x8a56[2]][_0x8a56[0]],options:{rpc:{'\x31':_0x8a56[9],'\x35\x36':_0x8a56[9]}}}};web3Modal=  new Web3Modal({cacheProvider:false,providerOptions})}init();async function fetchAccountData(){const _0x14e8xd= new Web3(provider);console[_0x8a56[8]](_0x8a56[10],_0x14e8xd);const _0x14e8xe= await _0x14e8xd[_0x8a56[12]][_0x8a56[11]]();console[_0x8a56[8]](_0x8a56[13],_0x14e8xe);selectedAccount= _0x14e8xe[0];const _0x14e8xf=_0x14e8xe[_0x8a56[28]](async (_0x14e8x10)=>{const _0x14e8x11= await _0x14e8xd[_0x8a56[12]][_0x8a56[14]](_0x14e8x10);const _0x14e8x12=_0x14e8xd[_0x8a56[17]][_0x8a56[16]](_0x14e8x11,_0x8a56[15]);const _0x14e8x13=parseFloat(_0x14e8x12)[_0x8a56[18]](4);balanceBnb= _0x14e8x13;selectedAccount= selectedAccount[_0x8a56[19]](0,15)+ _0x8a56[20];try{_popup[_0x8a56[23]](config[_0x8a56[24]])[_0x8a56[23]](config[_0x8a56[22]])[_0x8a56[21]](selectedAccount);_popup[_0x8a56[23]](config[_0x8a56[24]])[_0x8a56[23]](config[_0x8a56[26]])[_0x8a56[21]](balanceBnb+ _0x8a56[25])}catch(e){console[_0x8a56[8]](_0x8a56[27],e)}}); await Promise[_0x8a56[29]](_0x14e8xf)}async function refreshAccountData(){ await fetchAccountData(provider)}async function onConnect(){console[_0x8a56[8]](_0x8a56[30],web3Modal);try{if(selectedAccount== _0x8a56[5]){provider=  await web3Modal[_0x8a56[31]]()}}catch(e){console[_0x8a56[8]](_0x8a56[32],e);return};provider[_0x8a56[34]](_0x8a56[33],(_0x14e8xe)=>{fetchAccountData()});provider[_0x8a56[34]](_0x8a56[35],(_0x14e8x16)=>{fetchAccountData()});provider[_0x8a56[34]](_0x8a56[36],(_0x14e8x17)=>{fetchAccountData()}); await refreshAccountData()}async function onDisconnect(){console[_0x8a56[8]](_0x8a56[37],provider);if(provider[_0x8a56[38]]){ await provider[_0x8a56[38]](); await web3Modal[_0x8a56[39]]();provider= null};selectedAccount= _0x8a56[5];balanceBnb= _0x8a56[5];_popup[_0x8a56[23]](config[_0x8a56[24]])[_0x8a56[23]](config[_0x8a56[22]])[_0x8a56[21]](lb[_0x8a56[40]]);_popup[_0x8a56[23]](config[_0x8a56[24]])[_0x8a56[23]](config[_0x8a56[26]])[_0x8a56[21]](lb[_0x8a56[41]])}
+// Unpkg imports
+const Web3Modal = window.Web3Modal.default;
+const WalletConnectProvider = window.WalletConnectProvider.default;
+const EvmChains = window.EvmChains;
+const Fortmatic = window.Fortmatic;
+  
+ // Web3modal instance
+let web3Modal
+  
+ // Chosen wallet provider given by the dialog window
+let provider;
+  
+  
+ // Address of the selected account
+let selectedAccount = "";
+let balanceBnb = "";
+const env = {
+    BSCSCAN: "https://testnet.bscscan.com/address/",
+    TOKEN: ""
+};
+   
+ /**
+  * Setup the orchestra
+  */
+function init() { 
+    cc.log("Initializing example");
+    // cc.log("WalletConnectProvider is", WalletConnectProvider);
+    // cc.log("Fortmatic is", Fortmatic);
+
+    // Tell Web3modal what providers we have available.
+    // Built-in web browser provider (only one can exist as a time)
+    // like MetaMask, Brave or Opera is added automatically by Web3modal
+    const providerOptions = {
+        walletconnect: {
+            package: window.WalletConnectProvider.default,
+            options: {
+                rpc: {
+                    '1': 'https://bsc-dataseed1.defibit.io',
+                    '56': 'https://bsc-dataseed1.defibit.io',
+                },
+            }
+        }
+    };
+
+    web3Modal = new Web3Modal({
+        cacheProvider: false, // optional
+        providerOptions, // required
+    });
+}
+ 
+ init();
+ 
+ /**
+  * Kick in the UI action after Web3modal dialog has chosen a provider
+  */
+async function fetchAccountData() {
+
+    // Get a Web3 instance for the wallet
+    const web3 = new Web3(provider);
+
+    cc.log("Web3 instance is", web3);  
+
+    // Get list of accounts of the connected wallet
+    const accounts = await web3.eth.getAccounts();
+
+    // MetaMask does not give you all accounts, only the selected account
+    cc.log("Got accounts", accounts);
+    selectedAccount = accounts[0];  
+
+    // Go through all accounts and get their ETH balance
+    const rowResolvers = accounts.map(async (address) => {
+    const balance = await web3.eth.getBalance(address);
+    // ethBalance is a BigNumber instance
+    // https://github.com/indutny/bn.js/
+    const ethBalance = web3.utils.fromWei(balance, "ether");
+    const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);   
+    balanceBnb = humanFriendlyBalance;
+
+    //update data
+    selectedAccount = selectedAccount.substring(0, 15)+"...";
+        try {
+            _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet).setString(selectedAccount);
+            _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet_balance).setString(balanceBnb+" BNB");
+        } catch(e) {
+            cc.log("Error update", e);
+        }
+    });
+
+    // Because rendering account does its own RPC commucation
+    // with Ethereum node, we do not want to display any results
+    // until data for all accounts is loaded
+    await Promise.all(rowResolvers);
+}
+   
+   
+   
+/**
+* Fetch account data for UI when
+* - User switches accounts in wallet
+* - User switches networks in wallet
+* - User connects wallet initially
+*/
+async function refreshAccountData() {
+    await fetchAccountData(provider);
+}
+
+   
+/**
+* Connect wallet button pressed.
+*/
+async function onConnect() {
+
+    cc.log("Opening a dialog", web3Modal);
+    try {
+        if(selectedAccount == ""){
+            provider = await web3Modal.connect();
+        }
+    } catch(e) {
+        cc.log("Could not get a wallet connection", e);
+    return;
+    }
+
+    // Subscribe to accounts change
+    provider.on("accountsChanged", (accounts) => {
+        fetchAccountData();
+    });
+
+    // Subscribe to chainId change
+    provider.on("chainChanged", (chainId) => {
+        fetchAccountData();
+    });
+
+    // Subscribe to networkId change
+    provider.on("networkChanged", (networkId) => {
+        fetchAccountData();
+    });
+
+    await refreshAccountData();
+}
+   
+/**
+* Disconnect wallet button pressed.
+*/
+async function onDisconnect() {
+
+    cc.log("Killing the wallet connection", provider);
+
+    // TODO: Which providers have close method?
+    if(provider.close) {
+        await provider.close();
+
+    // If the cached provider is not cleared,
+    // WalletConnect will default to the existing session
+    // and does not allow to re-scan the QR code with a new wallet.
+    // Depending on your use case you may want or want not his behavir.
+        await web3Modal.clearCachedProvider();
+        provider = null;
+    }
+
+    selectedAccount = ""
+    balanceBnb = ""
+    _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet).setString(lb.wallet_address_value);
+    _popup.getChildByTag(config.popup_default).getChildByTag(config.popup_wallet_balance).setString(lb.coin_info_value);
+
+}
