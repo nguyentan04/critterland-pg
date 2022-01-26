@@ -207,5 +207,5 @@ const _map_init_scop_11 = 65;
 const _map_init_scop_12 = 60;
 const _map_init_scop_13 = 45;
 
-const max_card_hub = 10;
+const max_card_hub = 8;
 const max_scope = 10;
