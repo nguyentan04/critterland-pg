@@ -310,6 +310,7 @@
                 <file name="src/pillageScene.js"/>
                 <file name="src/profileScene.js"/>
                 <file name="src/storeScene.js"/>
+                <file name="src/creationScene.js"/>
                 <file name="src/shopScene.js"/>
                 <file name="main.js"/>
 
