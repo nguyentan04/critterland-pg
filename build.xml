@@ -297,7 +297,7 @@
                 <file name="src/resource.js"/>
                 <file name="src/loadingScene.js"/>
                 <file name="src/mainScene.js"/>
-                <file name="src/mainMapScene.js"/>
+                <file name="src/mainMapPlusScene.js"/>
                 <file name="src/homeScene.js"/>
                 <file name="src/homeMapScene.js"/>
                 <file name="src/firstScene.js"/>
@@ -305,6 +305,7 @@
                 <file name="src/getCardsActionScene.js"/>
                 <file name="src/campaignScene.js"/>
                 <file name="src/multiplayersScene.js"/>
+                <file name="src/mysteriousGateScene.js"/>
                 <file name="src/cardHubScene.js"/>
                 <file name="src/libraryScene.js"/>
                 <file name="src/pillageScene.js"/>
