@@ -1,151 +1,348 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Card Game</title>
-    <link rel="icon" type="image/GIF" href="res/favicon.ico"/>
-
-    <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
-
-    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
-
-    <!-- force webkit on 360 -->
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <!-- force edge on IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <!-- force full screen on some browser -->
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="360-fullscreen" content="true"/>
-
-    <!-- force screen orientation on some browser -->
-    <!-- <meta name="screen-orientation" content="portrait"/>
-    <meta name="x5-orientation" content="portrait"> -->
-
-    <meta name="browsermode" content="application">
-    <meta name="x5-page-mode" content="app">
-	
-	<link rel="apple-touch-icon" sizes="57x57" href="/critterland-pg/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/critterland-pg/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/critterland-pg/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/critterland-pg/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/critterland-pg/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/critterland-pg/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/critterland-pg/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/critterland-pg/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/critterland-pg/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/critterland-pg/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/critterland-pg/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/critterland-pg/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/critterland-pg/favicon-16x16.png">
-	<link rel="manifest" href="/critterland-pg/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<style type="text/css">
-@font-face {
-  font-family: Hamston;
-  src: url(Hamston.ttf);
-}
-html {
-  -ms-touch-action: none;
-}
-
-body, canvas, div {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: 0;
-  margin: 0;
-
-  cursor: default;
-  color: #888;
-  /* background-image: url("/res/bg/bg.gif");*/
-  background-image: url("/critterland-pg/res/bg/bg.gif");
-
-  text-align: center;
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-
-  display: flex;
-  flex-direction: column;
-}
-
-#Cocos2dGameContainer {
-  position: absolute;
-  margin: 0;
-  overflow: hidden;
-  left: 0px;
-  top: 0px;
-
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-}
-
-canvas {
-  background-color: rgba(0, 0, 0, 0);
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Blue Bird</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
+
+
 <body>
-<script src="res/loading.js"></script>
-<canvas id="gameCanvas" width="480" height="720"></canvas>
+    <div class="">
+        <div class="bgImageDivFirst">
+            <div class=" pt-5">
+                <div class="row g-0 justify-content-between pt-0 pt-md-5 px-0 px-md-5 mx-0 mx-md-5">
+                    <div class="col-12 col-md-6">
+                        <div class="twitterBgImage ps-4 ps-md-5">
+                            <div>
+                                <span class="happeningnowStyle fw-bold">Happening Now</span>
+                            </div>
+                            <div class="pt-2">
+                                <span class="fs-2">Introducing the #1 community driven<br>
+                                    Token by Blue Bird Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-5 pt-md-0 px-4 px-md-0">
+                        <div class="">
 
-<script cocos src="game.min.js"></script>
+                            <div class="col-12 text-center pt-0 pt-md-4">
+                                <div class="blueBgDiv px-3 px-md-4 py-3" style="color:#fff">
+                                    <div>
+                                        <span class="fs-2 fw-bold">SALE ENDS IN</span>
+                                    </div>
+                                    <div>
+                                        <div class="timer">
+                                            <div class="row g-0 g-md-3 justify-content-center">
+                                                <div class="col-3">
+                                                    <div>
+                                                        <span id="days" class="fs-1 fw-bold"></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="smallTimeText">Days</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div>
+                                                        <span id="hours" class="fs-1 fw-bold"></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="smallTimeText">Hours</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div>
+                                                        <span id="minutes" class="fs-1 fw-bold"></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="smallTimeText">Minutes</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div>
+                                                        <span id="seconds" class="fs-1 fw-bold"></span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="smallTimeText">Seconds</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div>
+                                        <div class="py-3">
+                                            <span class="fs-3 fw-bold">SALE PROGRESS</span>
+                                        </div>
+                                        <div>
+                                            <div class="row g-0" style="border: 4px solid white;border-radius: 25px;">
+                                                <div class="col-1" style="z-index: 10;">
+                                                    <div class="py-3"
+                                                        style="background-color: #083454;border-radius: 25px;z-index: 2;margin-right: -1rem;">
 
-<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/web3modal"></script>
-<script type="text/javascript" src="https://unpkg.com/evm-chains/lib/index.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
-<script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
-<script type="text/javascript" src="init.js"></script>
- 
-<!-- <script>
-  // disable right click
-  document.addEventListener('contextmenu', event => event.preventDefault());
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="py-3"
+                                                        style="background-color: #b0d4ec;border-radius: 25px;margin-left: -1rem;">
 
-  document.onkeydown = function (e) {
-      // disable F12 key
-      if(e.keyCode == 123) {
-          return false;
-      }
+                                                    </div>
+                                                </div>
+                                            </div>
 
-      // disable I key
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-          return false;
-      }
+                                        </div>
+                                    </div>
+                                    <div class="mt-3" style="background-color: #fff; border-radius: 15px;">
+                                        <div class="row g-0 ps-3 ps-md-4 pt-1">
+                                            <div class="col-auto my-auto py-2">
+                                                <img width="80px" src="BlueBirdCoinLogo.png" alt="">
+                                            </div>
+                                            <div class="col my-auto text-start ps-3">
+                                                <div style="color: #00acee !important;">
+                                                    <span class="fw-bold fs-2">Blue Bird = $1,254,628</span>
+                                                    <span>contribution received</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 justify-content-center py-3 px-3 px-md-4">
+                                            <div class="col-12">
+                                                <button class="w-100 py-3 buyNowBtnStyle"
+                                                    style="background-color: #00acee;"
+                                                    onclick="location.href='http://join.bluebird-ico.com/'">Join Presale
+                                                    Now</button>
+                                            </div>
+                                        </div>
 
-      // disable J key
-      if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-          return false;
-      }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            .blueBgDiv {
+                                background-color: #00acee;
+                                border-radius: 27px;
+                            }
+                        </style>
+                    </div>
+                    <div class="container mx-auto px-4 px-lg-5 blueBgPosition mt-5 mt-md-0">
+                        <div class="blueBgFirstDiv py-5 px-4 mx-0 mx-md-5">
+                            <div class="text-center fs-2">
+                                <span>The largest community driven token</span>
+                            </div>
+                            <div class="text-center px-0 px-lg-5 mx-0 mx-lg-5 pt-4">
+                                <span>Blue Bird Coin is the biggest community driven currency, dedicated to the people who
+                                    use
+                                    Twitter.
+                                    Our mission is to make everyone who uses our platform a part of our journey to
+                                    becoming the
+                                    largest community. Everyone has helped us become what we are now, so we've decided
+                                    we
+                                    want to give back. Through Blue Bird Coin we aim to support large digital projects,
+                                    from
+                                    which our community will get rewarded the most.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      // disable U key
-      if(e.ctrlKey && e.keyCode == 85) {
-          return false;
-      }
-  }
-</script> -->
+        </div>
+        <div class="bgImageDivSecond">
+            <div class="container py-5">
+                <div class="text-center  pb-4">
+                    <span class="fs-2">Blue Bird makes Dogecoin<br>
+                        accessible for all</span>
+                </div>
+                <div class="row imgsRowStyle">
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="text-center">
+                            <img src="001.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <div class="pb-4">
+                                <span class="fs-5">DOGE Compatibility</span>
+                            </div>
+                            <div>
+                                <span>Dominance in the industry, a well-established
+                                    tech stack, tools, languages, and standards,
+                                    and enterprise adoption</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="text-center">
+                            <img src="002.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <div class="pb-4">
+                                <span class="fs-5">Scalability</span>
+                            </div>
+                            <div>
+                                <span>Dedicated blockchains, scalable consensus
+                                    algorithms, custom Wasm
+                                    execution environments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="text-center">
+                            <img src="003.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text-center">
+                            <div class="pb-4">
+                                <span class="fs-5">Security</span>
+                            </div>
+                            <div>
+                                <span>Modular "security as a service," which can
+                                    be offered by Ethereum or a pool
+                                    of professional validators.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="text-center">
+                            <img src="004.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="text-center">
+                            <div class="pb-4">
+                                <span class="fs-5">Developer Experience</span>
+                            </div>
+                            <div>
+                                <span>No protocol expertise is necessary,
+                                    and there are no token deposits,
+                                    fees, or permits.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bgImageDivThird">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-8 my-auto">
+                        <div class="pb-4">
+                            <span class="fs-2">Complete transparency and<br>
+                                data protection</span>
+                        </div>
+                        <div>
+                            <span>
+                                We've built an environment that allows everyone to be in charge of the data
+                                they want to share, thanks to a committed staff dedicated to developing the
+                                finest tools for the community. We will provide everyone with the protection
+                                they require by utilizing blockchain technology, and we will allow them to
+                                choose what they want to share with others.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col my-auto pt-5 pt-md-0">
+                        <img src="protecion.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgImageDiv4">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col my-auto pb-5 pb-md-0">
+                        <img src="speech.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class=" col-12 col-md-8 my-auto" style="color: #fff">
+                        <div class="pb-4">
+                            <span class="fs-2">Where free speech gets<br>
+                                rewarded</span>
+                        </div>
+                        <div>
+                            <span>
+                                We love when people create things. That's why we we are here.
+                                And to back that up we are going to reward people who share
+                                their thoughts into our platform. From now on people are going
+                                to get rewarded for investing their time and helping our community
+                                grow bigger and better.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgImageDiv5">
+            <div class="container py-5">
+                <div class="text-center fs-1 pb-4">
+                    <span>A few words from our new owner</span>
+                </div>
+                <div class="text-center">
+                    <blockquote class="twitter-tweet mx-auto">
+                        <p lang="und" dir="ltr">🚀💫♥️ Yesss!!! ♥️💫🚀 <a
+                                href="https://t.co/0T9HzUHuh6">pic.twitter.com/0T9HzUHuh6</a></p>&mdash; Elon Musk
+                        (@elonmusk) <a
+                            href="https://twitter.com/elonmusk/status/1518677066325053441?ref_src=twsrc%5Etfw">April 25,
+                            2022</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+        <div class="bgImageDiv4">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 ps-3 ps-md-5 pt-5" style="color: #fff;">
+                    <div class="pb-4">
+                        <span class="fs-1">What are you<br>
+                            waiting for?</span>
+                    </div>
+                    <div>
+                        <span>Join us now and become a part of the community you<br>
+                            deserve to be in.</span>
+                    </div>
+                    <div class="pb-5 pt-4">
+                        <div class="col-5">
+                            <button class="w-100 py-3 buyNowBtnStyle2"
+                                onclick="location.href='http://join.bluebird-ico.com/'">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="waterDrop.png" class="dropLastImage img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 12, 2022 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</body>
 </html>
