@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "2d493588543e57fde6bb04cf98c145f8",
+  "assets/AssetManifest.json": "afe5f5169f8a1e95b2f84ce6bacef57c",
 "assets/assets/animation/congratulation.json": "fcc5146904ece2beaf407b15b841de2e",
 "assets/assets/animation/congratulation_stripes.json": "90609269ebc9ca7674b2924b1d0b73e7",
 "assets/assets/animation/countdown_blue.json": "73c3918da8fad4941f87a0ebacf6944e",
@@ -253,6 +253,7 @@ const RESOURCES = {
 "assets/assets/slide/31.png": "ccba108d89d4a1cbb8daa79bfdbcdce1",
 "assets/assets/slide/ho-chi-minh.jpg": "02697979a71998f26be62547dbfd47b8",
 "assets/assets/splash/splash.png": "a26927925fe044280d167b173a59ccd9",
+"assets/assets/splash/splash_.png": "75f6fe9e4707ef5b00f63b33cc749d9a",
 "assets/assets/store/05bnb.png": "629426e09ade39adb10fe1d3a563c346",
 "assets/assets/store/box-best.png": "b85e33c9caa5626559480ba33013f4d0",
 "assets/assets/store/box-moeny.png": "56a7fd30861f2550967ae55e7cca8117",
@@ -310,9 +311,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "721ca99d712521e178d90413f1adba0b",
-"/": "721ca99d712521e178d90413f1adba0b",
-"main.dart.js": "a609803f33b1aca1c06baa357cae5245",
+"index.html": "99ff48cb0411dd52c987ffdf2df0e1d0",
+"/": "99ff48cb0411dd52c987ffdf2df0e1d0",
+"main.dart.js": "b3d9bf18bef774c784084689826a76f5",
 "manifest.json": "849d7aed2c3eef5eb615d782d8622af4",
 "version.json": "5fe19516353d9f088081f9868144bd62"
 };
